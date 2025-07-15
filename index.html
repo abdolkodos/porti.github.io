@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+        /* New enhanced styles - only add these if you want the visual improvements */
+.enhanced-contact-section {
+   background: linear-gradient(180deg, #24285b 0%, #020219 100%);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enhanced-contact-methods {
+    margin-top: 1rem;
+}
+
+.enhanced-contact-item {
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.enhanced-contact-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+}
+
+.enhanced-contact-link:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.enhanced-contact-icon {
+    font-size: 1.1em;
+}
+/* Enhanced skills section - only add if you want these styles */
+.enhanced-skills {
+    background: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.enhanced-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.enhanced-skill-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.enhanced-skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.enhanced-skill-label {
+    font-size: 1rem;
+    font-weight:normal ;
+}
+
+.enhanced-skill-items {
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="supri"></div>
+            <div class="ring">
+            </div>
+            <h1>Abdelkader Barguellil</h1>
+            <p>Maritime Business Management</p>
+            <div class="scroll-indicator">
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container2">
+            <img src="./img/me.JPG">
+        </div>
+        <div class="container1">
+            <h2>About Me</h2>
+            <p>With a Master’s in Maritime Business Management and a Bachelor’s in Transport Technology and Engineering (Maritime Transportation), I have built a strong foundation in the maritime and logistics industry. Through internships and hands-on projects, I’ve applied my expertise in logistics optimization, management, and app development to solve real-world challenges.</p>
+            <p>I am passionate about digital transformation and the interconnected dynamics of supply chains, leveraging technology to enhance efficiency and transparency. Always eager to tackle challenges that drive professional growth, I aim to contribute my skills in supply chain management, maritime operations, and app development to deliver innovative, impactful solutions. Committed to lifelong learning, I thrive in environments that foster collaboration and forward-thinking progress.</p>
+        </div>
+
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>My Internships</h2>
+            <div class="stats-grid">
+                <div onclick="mo('TM')" class="stat-item">
+                    <div class="img">
+                        <img class="imgn" src="./img/tm.jpeg">
+                    </div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-suffix">month(s)</div>
+                    <div class="stat-label">Tunisie Maritime</div>
+                </div>
+                <div onclick="mo('OMMP')" class="stat-item">
+                    <div class="img"><img class="imgn" src="./img/ommp.jpeg"></div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-suffix">month(s)</div>
+                    <div class="stat-label">OMMP</div>
+                </div>
+                <div onclick="mo('AFR')" class="stat-item">
+                    <div class="img"><img class="imgn" src="./img/afr.jpeg"></div>
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-suffix">month(s)</div>
+                    <div class="stat-label">Afrimar</div>
+                </div>
+                <div onclick="mo('magic')" class="stat-item">
+                    <div class="img"><img class="imgn" src="./img/magic.jpeg"></div>
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-suffix">month(s)</div>
+                    <div class="stat-label">Magic yachts</div>
+                </div>
+            </div>
+        </div>
+        <div onclick="om('TM')" id="tm" class="inff">
+            <h1>Tunisie Maritime</h1>
+            <div style="text-align: left;">
+                <ul>
+                    <li>Prepared and processed import documentation, ensuring compliance with customs regulations and timely clearance of shipments.</li>
+                    <li>Managed crew change documentation to facilitate smooth transitions.</li>
+                    <li>Developed a web application to automate reporting and documentation processes, reducing manual workload and minimizing errors.</li>
+                </ul>
+            </div>
+        </div>
+                <div onclick="om('OMMP')" id="omm" class="inff">
+            <h1>The Office of the Merchant Marine and Ports</h1>
+            <div style="text-align: left;">
+                <ul>
+                    <li>Identify and analyze risks in the port environment.</li>
+                    <li>Supervision of safety measures taken by employees according to standards.</li>
+                    <li>Identification of risks associated with each position</li>
+                    <li>Calculate the unloading efficiency of the ships and the estimated time required to complete the unloading of goods</li>
+                    <li>Developed a platform connecting port parties to supervise operations, collect security data, and analyze risks per quay/terminal to predict potential threats.</li>
+                </ul>
+            </div>
+        </div>
+                <div onclick="om('AFR')" id="afr" class="inff">
+            <h1>Afrimar</h1>
+            <div style="text-align: left;">
+                <ul>
+                    <li>Prepared and updated Excel files for container tracking, ensuring accurate documentation of shipments.</li>
+                    <li>Supervised loading and unloading operations, verifying container placement according to the vessel’s bay plan.</li>
+                    <li>Created daily operational reports, summarizing activities, delays, and key metrics for management review.</li>
+                    <li>Coordinated with port personnel to ensure smooth workflow and compliance with safety and logistical protocols.</li>
+                </ul>
+            </div>
+        </div>
+                <div onclick="om('magic')" id="mag" class="inff">
+            <h1>Magic Yachts</h1>
+            <div style="text-align: left;">
+                <ul>
+                    <li>Participation in 3D modeling of certain parts of the yacht</li>
+                    <li>Participation in performance evaluation tests of the yacht</li>
+                    <li>Assisting of information exchange regarding the project's progress with stakeholders</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Stats Section -->
+    <section class="stats-section secondary enhanced-skills">
+    <div class="container">
+        <h2>Skills & Expertise</h2>
+        <div class="stats-grid enhanced-skills-grid">
+            <!-- Microsoft Office Skills -->
+            <div class="stat-item">
+                <div class="img"><img class="imgn" src="./img/offi.jpeg"></div>
+                <div class="stat-label enhanced-skill-items">Microsoft Office</div>
+                <div class="stat-suffix enhanced-skill-label">
+                    Word, Excel, PowerPoint, Access
+                </div>
+            </div>
+            
+            <!-- Programming Languages -->
+            <div class="stat-item">
+                <div class="img"><img class="imgn" src="./img/cod.jpeg"></div>
+                <div class="stat-label enhanced-skill-items">Programming</div>
+                <div class="stat-suffix enhanced-skill-label">
+                    Python (Machine Learning), C++, PHP, JavaScript, SQL, HTML/CSS
+                </div>
+            </div>
+            
+            <!-- Data Analysis -->
+            <div class="stat-item">
+                <div class="img"><img class="imgn" src="./img/dat.jpeg"></div>
+                <div class="stat-label enhanced-skill-items">Data Analysis</div>
+                <div class="stat-suffix enhanced-skill-label">
+                    Statistical Analysis, Multicriteria Analysis
+                </div>
+            </div>
+            
+            <!-- Maritime & Logistics -->
+            <div class="stat-item">
+                <div class="img"><img class="imgn" src="./img/Navi.png"></div>
+                <div class="stat-label enhanced-skill-items">Maritime & Logistics</div>
+                <div class="stat-suffix enhanced-skill-label">
+                    Maritime Law, Ship Operations, Shipping Techniques, Supply Chain
+                </div>
+            </div>
+            
+            <!-- Management -->
+            <div class="stat-item">
+                <div class="img"><img class="imgn" src="./img/sto.webp"></div>
+                <div class="stat-label enhanced-skill-items">Management</div>
+                <div class="stat-suffix enhanced-skill-label">
+                    Inventory Management, Time Management
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- More Content -->
+<section class="content enhanced-contact-section">
+    <div class="container">
+        <h2 class="enhanced-contact-heading">Get in Touch</h2>
+        <br>
+        <div class="enhanced-contact-methods">
+            <!-- LinkedIn Link -->
+            <p class="enhanced-contact-item">
+                <a href="https://www.linkedin.com/in/abdelkader-barguellil-653783260" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="enhanced-contact-link">
+                   <span class="enhanced-contact-icon"><i class="fa fa-linkedin-square"></i></span> 
+                   www.linkedin.com/in/abdelkader-barguellil-653783260
+                </a>
+            </p>
+            
+            <!-- Email Link -->
+            <p class="enhanced-contact-item">
+                <a href="mailto:barguellilabdelkader1@gmail.com" 
+                   class="enhanced-contact-link">
+                   <span class="enhanced-contact-icon">✉</span> 
+                   barguellilabdelkader1@gmail.com
+                </a>
+            </p>
+            <br><br><br><br>
+        </div>
+    </div>
+</section>
+    <script src="./js/script.js"></script>
+    <script src="./js/mario.js"></script>
+</body>
+</html>
+
