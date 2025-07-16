@@ -339,6 +339,13 @@ footer {
 .stats-section {
     width: 100%;
 }
+    .container2 img {
+    width: 386px;
+    height: 420px;
+}
+.container2{
+    padding: 0%;
+}
 .content {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -387,6 +394,13 @@ footer {
 .content,
 .stats-section {
     width: 100%;
+}
+    .container2 img {
+    width: 386px;
+    height: 420px;
+}
+.container2{
+    padding: 0%;
 }
 .inff{
     top:-80pc;
